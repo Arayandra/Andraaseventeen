@@ -1,0 +1,17 @@
+def gcd(a, b):
+    while b != 0:
+        remainder = a % b
+        a = b
+        b = remainder
+    return a
+
+def lcm(a, b):
+    return (a * b) // gcd(a, b)
+
+def main():
+    number1 = 3
+    number2 = 4
+    kpk = lcm(number1, number2)
+    print(f"KPK dari {number1} dan {number2} adalah {kpk}")
+
+main()
